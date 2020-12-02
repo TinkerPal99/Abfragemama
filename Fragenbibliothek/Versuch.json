@@ -1,0 +1,11 @@
+[
+  {
+  "Thematik": "Struktogramme",
+  "Frage": "Wie werden Struktogramme noch genannt ? ",
+  "Antwort": [
+              ["programmablaufplan", "pap"],
+              ["pseudocode"]
+            ]
+  }
+
+]
