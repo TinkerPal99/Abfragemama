@@ -7,7 +7,7 @@ if __name__ == "__main__":
     fragenpfad = input("Wo liegen den die Thematiken ? ")
 
     # Korrketes Eingabeformat ?
-    if fragenpfad.split(".")[1] != "json":
+    if fragenpfad.split(".")[-1] != "json":
         raise FileNotFoundError
     # TODO ordentlichen Fehler schreiben
     else:
@@ -35,6 +35,9 @@ if __name__ == "__main__":
                     print("Das musst du nochmal üben!")
                     fragenliste.append(frage)
                     fragenliste.append(frage)
-                    # TODO Dual append
+
                     break
-            print("Okay, noch {x} Fragen, dann muss ich aber weiter!".format(x=len(fragenliste)))
+            if len(fragenliste) == 0:
+                print("DAs wars! Sehr gut gemacht!")
+            else:
+                print("Okay, noch {x} Fragen, dann muss ich aber weiter!".format(x=len(fragenliste)))
